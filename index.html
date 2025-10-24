@@ -1,38 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <style>
-        /* CSS simples para começar */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-            display: grid;
-            place-items: center;
-            min-height: 90vh;
-            margin: 0;
-        }
-        .container {
-            background: #fff;
-            padding: 2rem 3rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-        h1 {
-            color: #0366d6;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Olá, eu sou xJLcoelho!</h1>
-        <p>Bem-vindo ao meu portfólio.</p>
-        <p>Em construção...</p>
-    </div>
-</body>
+<html lang="pt-br" data-theme="light">
+	<head>
+		<title>Meu Portfólio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Portfólio Pessoal" />
+		<meta name="author" content="Seu Nome" />
+		<meta name="keywords" content="portfolio, html, css, javascript" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="profile">
+				<img
+					id="profile-pic"
+					src="./assets/profile.jpeg"
+					alt="Foto de Perfil"
+				/>
+			</div>
+			<h1>João Luís Coelho (SEU NOME)</h1>
+			<h2>Desenvolvedor de Software (SUA PROFISSÃO)</h2>
+
+			<div class="social-links">
+				<a href="https://github.com/xJLcoelho" target="_blank">
+					<i class="devicon-github-original"></i> GitHub
+				</a>
+				<a href="#" target="_blank">
+					<i class="devicon-linkedin-plain"></i> LinkedIn
+				</a>
+				<a href="mailto:seu-email@dominio.com" target="_blank">
+					<i class="devicon-google-plain"></i> Email
+				</a>
+			</div>
+
+			<button id="theme-toggle">Trocar Tema</button>
+		</header>
+
+		<main>
+			<section id="sobre">
+				<h2>Sobre</h2>
+				<p>
+					Olá! Sou [Seu Nome], um entusiasta de tecnologia focado em
+					desenvolvimento. Atualmente estou focado em... (Escreva seu texto
+					aqui).
+				</p>
+			</section>
+
+			<section id="habilidades">
+				<h2>Habilidades</h2>
+				<div class="skills-container">
+					<div class="skill-item">
+						<i class="devicon-html5-plain-wordmark"></i>
+						<span>HTML5</span>
+					</div>
+					<div class="skill-item">
+						<i class="devicon-css3-plain-wordmark"></i>
+						<span>CSS3</span>
+					</div>
+					<div class="skill-item">
+						<i class="devicon-javascript-plain"></i>
+						<span>JavaScript</span>
+					</div>
+					<div class="skill-item">
+						<i class="devicon-git-plain-wordmark"></i>
+						<span>Git</span>
+					</div>
+					</div>
+			</section>
+
+			<section id="projetos">
+				<h2>Projetos</h2>
+				<div class="projects-container">
+					<div class="project-item">
+						<h3>Nome do Projeto 1</h3>
+						<p>
+							Breve descrição do seu projeto. O que ele faz? Quais
+							tecnologias usou?
+						</p>
+						<a
+							href="https://github.com/xJLcoelho/seu-repositorio"
+							target="_blank"
+							>Ver no GitHub</a
+						>
+					</div>
+					<div class="project-item">
+						<h3>Nome do Projeto 2</h3>
+						<p>
+							Breve descrição do seu projeto. O que ele faz? Quais
+							tecnologias usou?
+						</p>
+						<a
+							href="https://github.com/xJLcoelho/outro-repositorio"
+							target="_blank"
+							>Ver no GitHub</a
+						>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
 </html>
